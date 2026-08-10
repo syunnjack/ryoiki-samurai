@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>士業領域ナビ｜行政書士・弁護士の相談先を一次判定</title>
+<meta name="description" content="依頼内容から、行政書士領域・弁護士領域・境界／要確認を無料で一次判定。理由と危険シグナル、相談先の目安を表示します。">
+<meta name="robots" content="index,follow,max-image-preview:large"><meta property="og:title" content="士業領域ナビ｜行政書士・弁護士の相談先を一次判定"><meta property="og:description" content="依頼内容を入力すると、相談先の目安と判定理由を表示します。"><meta property="og:type" content="website"><meta name="theme-color" content="#143d34">
+<link rel="canonical" href="https://ryoiki-samurai.vercel.app/"><link rel="stylesheet" href="styles.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebApplication","name":"士業領域ナビ","applicationCategory":"LegalService","operatingSystem":"Web","description":"行政書士・弁護士の相談領域を一次判定する日本語Webアプリ"},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"この判定は法的判断ですか？","acceptedAnswer":{"@type":"Answer","text":"いいえ。相談先を選ぶための一般的な一次判定であり、個別案件の法的判断ではありません。"}},{"@type":"Question","name":"紛争がある場合は誰に相談しますか？","acceptedAnswer":{"@type":"Answer","text":"相手方との対立、代理交渉、訴訟などがある場合は、原則として弁護士への相談を検討してください。"}}]}]}</script>
+</head>
+<body>
+<header class="site-header"><a class="brand" href="#top" aria-label="士業領域ナビ ホーム"><span class="crest">士</span><span>士業領域ナビ</span></a><nav aria-label="主要ナビゲーション"><a href="#judge">一次判定</a><a href="#guide">領域ガイド</a><a href="#faq">FAQ</a></nav></header>
+<main id="top">
+<section class="hero"><div class="eyebrow">LEGAL ROUTE FINDER</div><h1>その依頼、<br><em>誰に相談すべき？</em></h1><p>案件の状況から「行政書士」「弁護士」「境界／要確認」の3領域を一次判定し、理由と注意点を分かりやすく示します。</p><a class="primary" href="#judge">無料で判定する <span>→</span></a><p class="micro">入力内容は送信・保存されず、ブラウザ内だけで判定します。</p></section>
+<section class="judge" id="judge"><div class="section-heading"><span>01 / CHECK</span><h2>依頼内容を教えてください</h2><p>具体的な状況を書くほど、より適切な目安を表示できます。</p></div>
+<form id="judge-form"><label for="matter">相談したい内容</label><textarea id="matter" maxlength="1200" required placeholder="例：建設業許可を新規取得したい。申請書類の作成と提出をお願いしたい。"></textarea><div class="form-row"><span id="count">0 / 1200</span><button type="submit">判定結果を見る</button></div></form><div id="result" class="result" hidden aria-live="polite"></div></section>
+<section class="signal"><div><span class="signal-mark">!</span><h2>危険シグナル</h2><p>次の事情がある場合、弁護士への早めの相談が重要です。</p></div><ul><li>相手方と主張が対立している</li><li>代理で交渉してほしい</li><li>訴状・内容証明が届いた</li><li>損害賠償や金銭請求がある</li><li>期限・時効が迫っている</li><li>刑事事件に関係している</li></ul></section>
+<section id="guide" class="guide"><div class="section-heading"><span>02 / GUIDE</span><h2>3つの判定領域</h2></div><div class="cards">
+<article><div class="num">A</div><h3>行政書士領域</h3><p>紛争になる前の書類作成や行政手続を中心とする領域。</p><ul><li>許認可・届出</li><li>官公署提出書類</li><li>遺言・相続書類</li><li>契約書・内容証明の作成</li></ul></article>
+<article class="lawyer"><div class="num">B</div><h3>弁護士領域</h3><p>紛争解決、交渉代理、訴訟など法律事務を扱う領域。</p><ul><li>相手方との代理交渉</li><li>訴訟・調停・審判</li><li>損害賠償請求</li><li>刑事事件・労働紛争</li></ul></article>
+<article class="border"><div class="num">?</div><h3>境界／要確認</h3><p>事実関係や依頼範囲によって適切な専門家が変わる領域。</p><ul><li>争いの有無が不明</li><li>書類作成と交渉が混在</li><li>業務範囲が曖昧</li><li>複数分野にまたがる案件</li></ul></article></div></section>
+<section id="faq" class="faq"><div class="section-heading"><span>03 / FAQ</span><h2>よくある質問</h2></div>
+<details><summary>この結果だけで依頼先を決めてよいですか？</summary><p>本サービスは一般情報に基づく一次判定です。最終的には案件の全事情を専門家に伝え、受任可否を確認してください。</p></details>
+<details><summary>行政書士は相手方と交渉できますか？</summary><p>一般に、報酬を得て法律事件について代理交渉することは弁護士の職域です。争いや交渉がある場合は弁護士に相談してください。</p></details>
+<details><summary>内容証明はどちらに相談しますか？</summary><p>文書作成のみで紛争性がない場合は行政書士が対応できることがあります。一方、相手への請求・交渉や争いを伴う場合は弁護士への相談が適切です。</p></details></section>
+<section class="disclaimer"><h2>ご利用上の注意</h2><p>本サイトは、公開情報と一般的な職域整理に基づき相談先の目安を示すもので、法律相談、鑑定、個別案件への法的助言ではありません。判定結果の正確性・完全性を保証するものではありません。緊急性がある場合や期限が迫っている場合は、結果にかかわらず弁護士その他の適切な専門機関へ速やかにご相談ください。</p></section>
+</main><footer><span>© 2026 士業領域ナビ</span><span>相談先選びのための一次判定サービス</span></footer><script src="app.js" defer></script>
+</body></html>
